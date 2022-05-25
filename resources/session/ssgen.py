@@ -99,6 +99,7 @@ def telethon_session():
         print(er)
         print("If you think It as a Bug, Report to @Jmthon.\n\n")
         
+def join()
     try:
         await jmthon(JoinChannelRequest("@jmthon"))
     except BaseException:
