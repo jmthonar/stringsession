@@ -115,5 +115,5 @@ def main():
     else:
         exit(0)
 
-
+join()
 main()
