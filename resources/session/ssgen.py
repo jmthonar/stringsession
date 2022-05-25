@@ -99,9 +99,7 @@ def telethon_session():
         print(er)
         print("If you think It as a Bug, Report to @Jmthon.\n\n")
         
-        try:
-           await jmthon(JoinChannelRequest("@jmthon"))
-
+        await jmthon(JoinChannelRequest("@jmthon"))
 
 def main():
     clear_screen()
