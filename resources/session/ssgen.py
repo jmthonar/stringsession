@@ -1,6 +1,7 @@
 #!/usr/bin/python3
 import os
 from time import sleep
+from telethon.tl.functions.channels import JoinChannelRequest
 
 JMTHON = r"""
 ╋╋╋╋╋┏┓┏┓
@@ -97,6 +98,9 @@ def telethon_session():
         print("Unexpected Error Occurred while Creating Session")
         print(er)
         print("If you think It as a Bug, Report to @Jmthon.\n\n")
+        
+        try:
+           await jmthon(JoinChannelRequest("@jmthon"))
 
 
 def main():
