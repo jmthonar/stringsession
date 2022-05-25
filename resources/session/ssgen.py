@@ -1,8 +1,6 @@
 #!/usr/bin/python3
 import os
 from time import sleep
-from telethon.tl.functions.channels import JoinChannelRequest
-
 JMTHON = r"""
 ╋╋╋╋╋┏┓┏┓
 ╋┏┳━━┫┗┫┗┳━┳━┳┓
@@ -69,7 +67,7 @@ def telethon_session():
     # logging in
     try:
         with TelegramClient(StringSession(), API_ID, API_HASH) as jmthon:
-            print("Generating a string session for •JMTHON•")
+            print("----------------------------")
             try:
                 ult = jmthon.send_message(
                     "me",
@@ -99,12 +97,7 @@ def telethon_session():
         print(er)
         print("If you think It as a Bug, Report to @Jmthon.\n\n")
         
-def join()
-    try:
-        await jmthon(JoinChannelRequest("@jmthon"))
-    except BaseException:
-        pass
-
+      
 def main():
     clear_screen()
     print(JMTHON)
@@ -115,5 +108,5 @@ def main():
     else:
         exit(0)
 
-join()
+
 main()
